@@ -4,4 +4,5 @@ require 'plugins'
 require 'colorscheme'
 require 'treesitter'
 require 'nvimtree'
+require 'autopairs'
 
