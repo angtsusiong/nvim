@@ -1,4 +1,5 @@
 local options = {
+	undofile = true,
 	completeopt = { 'menuone', 'noselect' },
 	signcolumn = 'yes',
 	ignorecase = true,
@@ -22,4 +23,6 @@ vim.opt.shortmess:append 'c'
 for k, v in pairs(options) do
   vim.opt[k] = v
 end
+
+vim.cmd [[set iskeyword+=-]]
 

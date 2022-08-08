@@ -47,6 +47,12 @@ return packer.startup(function(use)
   -- Colorscheme
   use 'folke/tokyonight.nvim'
 
+	-- Treesitter
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate',
+  }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
