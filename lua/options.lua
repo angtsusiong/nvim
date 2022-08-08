@@ -6,6 +6,8 @@ local options = {
   showmode = false,
   showtabline = 2,
   smartindent = true,
+	splitbelow = true,
+	splitright = true,
   tabstop = 2,
   pumheight = 10,
   cmdheight = 2,
@@ -23,6 +25,4 @@ vim.opt.shortmess:append 'c'
 for k, v in pairs(options) do
   vim.opt[k] = v
 end
-
-vim.cmd [[set iskeyword+=-]]
 
