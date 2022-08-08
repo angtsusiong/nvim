@@ -6,4 +6,5 @@ require 'treesitter'
 require 'nvimtree'
 require 'autopairs'
 require 'lualine'
+require 'nvimcmp'
 
