@@ -5,20 +5,20 @@ if not status_ok then
 end
 
 configs.setup {
-	-- A list of parser names
+  -- A list of parser names
   ensure_installed = {
-		'c',
-		'cpp',
-		'lua',
-	},
+    'c',
+    'cpp',
+    'lua',
+  },
 
-	-- Install parsers synchronously (only applied to `ensure_installed`)
+  -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
 
-	highlight = {
-		enable = true,
-		additional_vim_regex_highlighting = true,
-	},
-	indent = { enable = true },
+  highlight = {
+    enable = true,
+    additional_vim_regex_highlighting = true,
+  },
+  indent = { enable = true },
 }
 

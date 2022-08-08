@@ -25,7 +25,7 @@ keymap('n', '<C-j>', '<C-w>j', opts)
 keymap('n', '<C-k>', '<C-w>k', opts)
 keymap('n', '<C-l>', '<C-w>l', opts)
 
-keymap('n', '<leader>e', ':Lex 30<cr>', opts)
+keymap('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
 
 -- Compile and run
 keymap('n', '<leader>c', ':w <CR> :!g++ -fsanitize=address -Wall -Wextra -Wconversion -Wshadow -std=c++20 -O2 -o %< % && ./%< <CR>', opts)
