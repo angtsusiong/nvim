@@ -5,4 +5,5 @@ require 'colorscheme'
 require 'treesitter'
 require 'nvimtree'
 require 'autopairs'
+require 'lualine'
 
