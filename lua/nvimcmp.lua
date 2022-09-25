@@ -117,3 +117,15 @@ cmp.setup {
   },
 }
 
+local s = require('luasnip').snippet
+local t = require('luasnip').text_node
+local i = require('luasnip').insert_node
+
+require('luasnip').add_snippets('cpp', {
+  s('cp', {
+    t({ '#include <bits/stdc++.h>', 'using namespace std;', '', 'int main() {', '\t' }),
+    i(0),
+    t({ '', '}' }),
+  }),
+})
+
