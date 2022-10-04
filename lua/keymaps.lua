@@ -30,6 +30,11 @@ keymap('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
 -- Compile and run
 keymap('n', '<leader>c', ':w <CR> :!g++ -fsanitize=address -Wall -Wextra -Wconversion -Wshadow -std=c++20 -O2 -o %:p:r %:p && %:p:r <CR>', opts)
 
+keymap('n',
+  '<leader>t',
+  ':w <CR> :!g++ -fsanitize=address -Wall -Wextra -Wconversion -Wshadow -std=c++20 -O2 -o %:p:r %:p && %:p:r < %:p:r.in <CR>',
+  opts)
+
 -- Resize with arrows
 keymap('n', '<C-Up>', ':resize +2<CR>', opts)
 keymap('n', '<C-Down>', ':resize -2<CR>', opts)

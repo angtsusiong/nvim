@@ -123,7 +123,8 @@ local i = require('luasnip').insert_node
 
 require('luasnip').add_snippets('cpp', {
   s('cp', {
-    t({ '#include <bits/stdc++.h>', 'using namespace std;', '', 'int main() {', '\t' }),
+    t({ '#include <bits/stdc++.h>', 'using namespace std;', '', 'int main() {' }),
+    t({ '', '\tios_base::sync_with_stdio(0); cin.tie(0);', '', '\t' }),
     i(0),
     t({ '', '}' }),
   }),
