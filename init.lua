@@ -8,4 +8,5 @@ require 'autopairs'
 require 'lualine'
 require 'nvimcmp'
 require 'nvimlsp'
+require 'rusttools'
 

@@ -8,8 +8,13 @@ configs.setup {
   -- A list of parser names
   ensure_installed = {
     'c',
+    'cmake',
     'cpp',
+    'glsl',
     'lua',
+    'make',
+    'rust',
+    'wgsl',
   },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
