@@ -123,9 +123,16 @@ local i = require('luasnip').insert_node
 
 require('luasnip').add_snippets('cpp', {
   s('cp', {
-    t({ '#include <bits/stdc++.h>', 'using namespace std;', '', 'int main() {' }),
-    t({ '', '\tios_base::sync_with_stdio(0); cin.tie(0);', '', '\t' }),
+    t({ '#include <bits/stdc++.h>', 'using namespace std;', 'using i64 = long long;', '', 'int main() {' }),
+    t({ '', '\tios_base::sync_with_stdio(false); cin.tie(nullptr);', '', '\t' }),
     i(0),
+    t({ '', '}' }),
+  }),
+  s('cpcf', {
+    t({ '#include <bits/stdc++.h>', 'using namespace std;', 'using i64 = long long;', '', 'void solve() {', '\t' }),
+    i(0),
+    t({ '', '}', '', '' }),
+    t({ 'int main() {', '\tios_base::sync_with_stdio(false); cin.tie(nullptr);', '\tint t;', '\tcin >> t;', '\twhile(t--)', '\t\tsolve();' }),
     t({ '', '}' }),
   }),
 })
