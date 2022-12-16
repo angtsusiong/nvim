@@ -10,7 +10,7 @@ lsp_installer.on_server_ready(function(server)
     on_attach = require('nvimlsp.handlers').on_attach,
     capabilities = require('nvimlsp.handlers').capabilities,
   }
-
+-- python
   if server.name == 'clangd' then
     local clangd_opts = require('nvimlsp.settings.clangd')
     opts = vim.tbl_deep_extend('force', clangd_opts, opts)
