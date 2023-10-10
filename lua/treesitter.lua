@@ -7,14 +7,20 @@ end
 configs.setup {
   -- A list of parser names
   ensure_installed = {
+    'bash',
     'c',
     'cmake',
     'cpp',
+    'dockerfile',
     'glsl',
     'lua',
     'make',
+    'python',
+    'query',
     'rust',
+    'vim',
     'wgsl',
+    'yaml',
   },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
@@ -25,6 +31,10 @@ configs.setup {
     enable = true,
     additional_vim_regex_highlighting = true,
   },
-  indent = { enable = true },
+  indent = { enable = true, disable = { "python" } },
+  context_commentstring = {
+    enable = true,
+    enable_autocmd = false,
+  },
 }
 
