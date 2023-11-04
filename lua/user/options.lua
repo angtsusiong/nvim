@@ -21,6 +21,8 @@ local options = {
   shiftwidth = 2,
 }
 
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 vim.opt.shortmess:append 'c'
 
 for k, v in pairs(options) do

@@ -3,5 +3,5 @@ if not status_ok then
 	return
 end
 
-require 'nvimlsp.installer'
-require('nvimlsp.handlers').setup()
+require 'user.nvimlsp.mason'
+require('user.nvimlsp.handlers').setup()

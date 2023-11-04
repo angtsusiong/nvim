@@ -44,18 +44,26 @@ return packer.startup(function(use)
   use 'nvim-lua/popup.nvim' -- An implementation of the Popup API from vim in Neovim
   use 'nvim-lua/plenary.nvim' -- Useful lua functions used by lots of plugins
   use 'windwp/nvim-autopairs' -- Autopairs, integrates with both cmp and treesitter
-  use 'nvim-lualine/lualine.nvim'
-  use 'akinsho/bufferline.nvim'
-  use 'akinsho/toggleterm.nvim'
+  -- NvimTree
   use 'numToStr/Comment.nvim'
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
+  use 'nvim-tree/nvim-web-devicons'
+  use 'nvim-tree/nvim-tree.lua'
+  use 'akinsho/bufferline.nvim'
+  use 'nvim-lualine/lualine.nvim'
+  use 'akinsho/toggleterm.nvim'
+  use 'folke/which-key.nvim'
 
+  -- Colorscheme
+  use 'folke/tokyonight.nvim'
+  
   -- cmp plugins
   use 'hrsh7th/nvim-cmp' -- The completion plugin
   use 'hrsh7th/cmp-buffer' -- buffer completions
   use 'hrsh7th/cmp-path' -- path completions
-  use 'hrsh7th/cmp-cmdline' -- cmdline completions
-  use 'hrsh7th/cmp-nvim-lsp'
   use 'saadparwaiz1/cmp_luasnip' -- snippet completions
+  use 'hrsh7th/cmp-nvim-lua' -- cmdline completions
+  use 'hrsh7th/cmp-nvim-lsp'
 
   -- snippets
   use 'L3MON4D3/LuaSnip' --snippet engine
@@ -63,17 +71,12 @@ return packer.startup(function(use)
 
   -- LSP
   use 'neovim/nvim-lspconfig' -- enable LSP
-  use 'williamboman/nvim-lsp-installer' -- simple to use language server installer
+  use 'williamboman/mason.nvim' -- simple to use language server installer
+  use 'williamboman/mason-lspconfig.nvim'
+  use 'RRethy/vim-illuminate'
  
   -- Adds extra functionality over rust analyzer
   use("simrat39/rust-tools.nvim")
-
-  -- NvimTree
-  use 'kyazdani42/nvim-tree.lua'
-  use 'kyazdani42/nvim-web-devicons'
-
-  -- Colorscheme
-  use 'folke/tokyonight.nvim'
 
   -- Telescope
   use 'nvim-telescope/telescope.nvim'

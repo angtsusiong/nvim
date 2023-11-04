@@ -16,9 +16,10 @@ configs.setup {
     'lua',
     'make',
     'python',
-    'query',
+--    'query',
     'rust',
     'vim',
+    'vimdoc',
     'wgsl',
     'yaml',
   },
@@ -32,9 +33,9 @@ configs.setup {
     additional_vim_regex_highlighting = true,
   },
   indent = { enable = true, disable = { "python" } },
-  context_commentstring = {
-    enable = true,
-    enable_autocmd = false,
-  },
+  -- context_commentstring = {
+  --   enable = true,
+  --   enable_autocmd = false,
+  -- },
 }
 

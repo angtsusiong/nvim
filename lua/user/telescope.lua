@@ -6,7 +6,7 @@ end
 local actions = require('telescope.actions')
 
 telescope.setup {
-  default = {
+  defaults = {
     prompt_prefix = ' ',
     selection_caret = ' ',
     path_display = { 'smart' },
