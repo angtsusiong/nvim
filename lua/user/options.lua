@@ -14,6 +14,7 @@ local options = {
   cmdheight = 1,
   termguicolors = true,
   cursorline = true,
+  -- cursorlineopt = 'screenline',
   number = true,
   relativenumber = true,
 	wrap = false,
